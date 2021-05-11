@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+    <style name="TextView.Error" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextView.Info" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TextView.Info.Icon" parent="TextView.Info">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="drawableTint">?colorSecondaryVariant</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+    </style>
+
+    <style name="TextView.HeadLine" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="drawableTint">?colorSecondaryVariant</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+    </style>
+
+    <style name="TextView.HeadLine2" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="drawableTint">?colorSecondaryVariant</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+    </style>
+
+    <style name="TextView.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+</resources>

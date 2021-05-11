@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="searchedProduct"
+            type="com.amrmustafa.adidas.models.ProductPresentation" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintlayout"
+        android:padding="@dimen/padding_default">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_person_24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toEndOf="@id/image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{searchedProduct.name}'
+            style="@style/TextView.HeadLine"
+            tools:text="Darth Vader" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/birth_year_text_view"
+            style="@style/TextView.Info"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{searchedProduct.description}'
+            tools:text="BBY 14" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/price"
+                style="@style/TextView.Info"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{searchedProduct.unit_price+searchedProduct.currency_symbol}'
+                tools:text="0$" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>
