@@ -89,7 +89,7 @@ Libraries used in the whole application are:
 
 - [Jetpack](https://developer.android.com/jetpack)🚀
   - [Viewmodel](https://developer.android.com/topic/libraries/architecture/viewmodel) -Store and manage UI related data in a lifecycle conscious way and act as a channel between use cases and ui
-  - [Data Binding](https://developer.android.com/topic/libraries/data-binding) - support library that allows binding of UI components in  layouts to data sources,binds character details and search results to UI
+  - [Data Binding](https://developer.android.com/topic/libraries/data-binding) - support library that allows binding of UI components in  layouts to data sources,binds product details and search results to UI
   - [Room](https://developer.android.com/training/data-storage/room) - Provides abstraction layer over SQLite
 - [Retrofit](https://square.github.io/retrofit/) - type safe http client and supports coroutines out of the box.  
 - [Moshi](https://github.com/square/moshi) - JSON Parser,used to parse requests on the data layer for Entities and understands Kotlin non-nullable and default parameters
